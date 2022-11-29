@@ -231,7 +231,8 @@ p {
         font-size: .8rem;
     }
     .box {
-        display: none;
+        /* display: none; */
+        /* transform: scale(.5); */
     }
     .divy2 {
         margin: -10% auto 10% auto;
@@ -246,7 +247,7 @@ p {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     h2 {
         font-size: 1rem;
         top: 17%;
@@ -260,4 +261,16 @@ p {
             top: 15%;
             right: 11%;
         }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: .8rem;
+        top: 20%;
+        right: 11%;
+    }
+
+    .dPhoto {
+        margin-bottom: -10%;
+    }
 }
