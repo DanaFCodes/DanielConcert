@@ -105,8 +105,10 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: -12%;
+    opacity: 0;
+        animation: divdecoration 2s ease-out 2.5s;
+        animation-fill-mode: forwards;
 }
-
 
 .daniel,
 .ben {
@@ -138,6 +140,9 @@ p {
     margin: -8% auto 5% auto;
     width: 40%;
     display: block;
+    opacity: 0;
+    animation: divdecoration 2s ease-out 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .info {
@@ -200,6 +205,8 @@ p {
 @media (max-width: 1150px) {
     h2 {
         font-size: 2rem;
+        top: 30%;
+        right: 11%;
     }
 }
 
@@ -210,7 +217,7 @@ p {
     }
     h2 {
         font-size: 1.5rem;
-            top: 25%;
+        top: 20%;
         right: 11%;
     }
     .divy {
@@ -239,10 +246,18 @@ p {
     }
 }
 
-@media (max-width: 480px) {
-h2 {
+@media (max-width: 500px) {
+    h2 {
         font-size: 1rem;
-        top: 20%;
+        top: 17%;
         right: 11%;
     }
+}
+
+@media (max-width: 480px) {
+    h2 {
+            font-size: 1rem;
+            top: 15%;
+            right: 11%;
+        }
 }
