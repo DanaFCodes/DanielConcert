@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Lato:wght@700&family=Roboto+Flex:opsz@8..144&display=swap"
+        rel="stylesheet">
+    <title>De Liège a Paris</title>
+</head>
+<body>
+
+<heading class='wrapper'>
+    <h1>De Liège a Paris</h1>
+    <h2>Music by: Fauré, Franck, Ravel, Ysaÿe</h2>
+</heading> 
+
+<main class='wrapper'>
+    <div class="box disappear" id="scrDwn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <img src="./assets/divy.png" alt="ornate divider" class="divy">
+    
+    <!-- <div class="flexy">
+    <img src="./assets/Mariya & Daniel-419.jpg" alt="Headshot of Daniel Temnik with violin" class="daniel">
+    <h3 class="danielP">Daniel Temnik, Violin</h3>
+    <img src="./assets/Ben_New_Park.jpg" alt="Headshop of Benjamin Smith" class="ben">
+    <h3 class="benP">Benjamin Smith, Piano</h3>
+    </div> -->
+    
+    <!-- <img src="./assets/divy.png" alt="ornate divider" class="divy2"> -->
+    <div class="info">
+    <p class="present 1">presented by concerts@100:</p>
+    <p class="2">January 13th, 2023 - 7:30pm</p>
+    <!-- <p>7:30pm</p> -->
+    <p class="3">For tickets (and address) please RSVP:</p>
+    <p class="4">concertsat100@gmail.com</p>
+
+    <div class="dontation">
+    <p class="5">~donations are encouraged~</p>
+    </div>
+    </div>
+
+    <img src="./assets/divy.png" alt="ornate divider" class="divy2">
+    <div class="flexy">
+        <div class="dPhoto">
+        <img src="./assets/Mariya & Daniel-419.jpg" alt="Headshot of Daniel Temnik with violin" class="daniel">
+        <h3 class="danielP">Daniel Temnik, Violin</h3>
+        </div>
+        <div class="bPhoto">
+            <img src="./assets/Ben_New_Park.jpg" alt="Headshop of Benjamin Smith" class="ben">
+            <h3 class="benP">Benjamin Smith, Piano</h3>
+        </div>
+        <!-- <div class="caption">
+        
+        </div> -->
+    </div>
+
+    <script>
+        const scrollDown = document.getElementById('scrDwn');
+            window.addEventListener("scroll", () => {
+                var y = window.scrollY;
+                if (y >= 600) {
+                    scrDwn.classList.add('disappear');
+                    return;
+                }
+                else {
+                    scrDwn.classList.remove('disappear');
+                    // note that this is a class defined in your CSS.
+                }
+            });
+    </script>
+
+</main>
+</body>
+</html>
