@@ -257,16 +257,8 @@ p {
 
 @media (max-width: 480px) {
     h2 {
-            font-size: 1rem;
-            top: 15%;
-            right: 11%;
-        }
-}
-
-@media (max-width: 480px) {
-    h2 {
         font-size: .8rem;
-        top: 20%;
+        top: 15%;
         right: 11%;
     }
 
