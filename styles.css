@@ -202,7 +202,7 @@ p {
 }
 
 /* media queries */
-@media (max-width: 1300px) {
+@media (min-width: 1300px) {
     h2 {
         top: 35%;
     }
@@ -216,11 +216,11 @@ p {
     }
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     h2 {
-        top: 20%;
+        top: 27%;
     }
-} */
+}
 
 @media (max-width: 850px) {
     h1 {
