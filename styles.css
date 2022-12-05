@@ -6,13 +6,23 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* html,
+body {
+    height: 105%;
+    width: 100%;
+    margin: 0;
+} */
+
 html {
     font-size: 125%;
-    /* background-image: url(./assets/kiwihug-3gifzboyZk0-unsplash.jpg); */
-    /* background-image: url(./assets/pawel-czerwinski-beBBYVJ_4MM-unsplash.jpg); */
     background-image: url(./assets/dark-green-blurred-colorful-background-vector.jpg);
     background-size: cover;
+    background-repeat: repeat;
     overflow-x: hidden;
+
+    /* height: 105%;
+    width: 100%;
+    margin: 0; */
 }
 
 .wrapper {
@@ -23,6 +33,10 @@ html {
 body {
     border: 20px double rgb(86, 86, 86);
     --h1LoadTime: 1s;
+/* 
+    height: 100%;
+    width: 100%;
+    margin: 0; */
 }
 
 @keyframes h1Load {
@@ -46,13 +60,13 @@ body {
     }
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
     font-family: 'Great Vibes', cursive;
 }
 
 h1 {
     margin: 10% 0% 0% -4%;
-    font-size: 5.3rem;
+    font-size: 7.3rem;
     position: relative;
     color:rgb(123, 89, 53);
     animation: h1Load var(--h1LoadTime) ease-out;
@@ -62,9 +76,8 @@ h2 {
     margin-top: 0%;
     font-size: 3rem;
     position: absolute;
-    top: 35%;
-    right: 9%;
-    /* color:rgb(9, 11, 55); */
+    top: 18%;
+    right: 19%;
     color: rgb(94, 94, 94);
     opacity: 0;
     animation: h1Load var(--h1LoadTime) ease-out var(--h1LoadTime);
@@ -72,7 +85,7 @@ h2 {
 }
 
 .divy {
-    margin: -8% auto 5% auto;
+    margin: -8% auto -18% auto;
     width: 40%;
     display: block;
     opacity: 0;
@@ -86,7 +99,6 @@ heading {
 }
 
 p {
-    /* font-family: 'Lato', sans-serif; */
     font-size: 2.5rem;
     color:rgb(123, 89, 53);
     text-align: center;
@@ -97,7 +109,7 @@ p {
 }
 
 .present {
-    color:rgb(94, 94, 94);
+    color: rgb(164, 164, 164);
 }
 
 .flexy {
@@ -106,21 +118,22 @@ p {
     justify-content: space-evenly;
     margin-top: -12%;
     opacity: 0;
-        animation: divdecoration 2s ease-out 2.5s;
-        animation-fill-mode: forwards;
+    animation: divdecoration 2s ease-out 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .daniel,
 .ben {
     border-radius: 5%;
     width: 100%;
+    margin-top: -20%;
+    box-shadow: -1px 1px 1px rgb(56, 59, 54), 1px 0px 20px 8px rgb(56, 59, 54);
 }
 
 .dPhoto,
 .bPhoto {
     height: 500px;
     width: 360px;
-    margin-bottom: 5%;
 }
 
 .dPhoto {
@@ -128,16 +141,37 @@ p {
 }
 
 .danielP, 
-.benP {
+.benP,
+.rsvp, a {
     font-size: 1.5rem;
-    /* font-family: 'Lato', sans-serif; */
     color:rgb(123, 89, 53);
     justify-content: space-evenly;
     display: flex;
 }
 
+.danielP {
+    margin-bottom: -1%;
+    font-weight: 600;
+    padding: 9%;
+}
+
+.danielWeb {
+    text-decoration: none;
+}
+
+.rsvp {
+    margin-bottom: 4%;
+    color: rgb(164, 164, 164);
+    text-decoration: none;
+    opacity: 0;
+    animation: divdecoration 2s ease-out 2.5s;
+    animation-fill-mode: forwards;
+    font-size: 3rem;
+    margin-top: 1%;
+}
+
 .divy2 {
-    margin: -8% auto 5% auto;
+    margin: -12% auto 7% auto;
     width: 40%;
     display: block;
     opacity: 0;
@@ -202,96 +236,171 @@ p {
 }
 
 /* media queries */
-@media (min-width: 1300px) {
-    h2 {
-        top: 35%;
-    }
-}
-
-@media (max-width: 1150px) {
+@media (max-width: 1500px) {
     h2 {
         font-size: 2rem;
-        top: 30%;
+        top: 16%;
         right: 11%;
     }
-}
 
-@media (max-width: 1000px) {
-    h2 {
-        top: 25%;
+    .rsvp {
+        margin-bottom: 30%;
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1160px) {
+    h2 {
+        top: 15%;
+    }
     h1 {
-        margin-top: 10%;
-        font-size: 2.3rem;
+        font-size: 7rem;
     }
+
+}
+
+@media (max-width: 1100px) {
     h2 {
-        font-size: 1.5rem;
-        top: 20%;
-        right: 11%;
+        top: 13%;
     }
-    .divy {
-        margin: 0 auto; 
+
+    h1 {
+        font-size: 6rem;
     }
-    p {
-        font-size: 1.5rem;
+    .rsvp {
+        margin-bottom: 50%;
     }
-    .dontation p, 
-    .present {
-        font-size: .8rem;
+}
+
+@media (max-width: 950px) {
+    h2 {
+        top: 11%;
     }
-    .divy2 {
-        margin: -10% auto 10% auto;
+
+    h1 {
+        font-size: 5rem;
     }
-    .dPhoto {
-        margin-top: -20%;
-        transform: scale(.8);
+
+    .rsvp {
+        /* margin: 6% 30% 48% 0%; */
+        margin: 6% 11% 30% 0%;
+        
     }
+
+    .flexy {
+        flex-direction: column;
+        margin: -8% 0 -5% 20%;
+    }
+
+    .dPhoto, 
     .bPhoto {
-        margin-top: -15%;
-        transform: scale(.8);
+        margin-bottom: 10%;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 810px) {
     h2 {
-        top: 18%;
+        top: 9%;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .rsvp {
+        margin: 6% 5% 30% 0%;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
+    .rsvp {
+        margin: 6% 0% 30% 0%;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .flexy {
+        margin: 0% 0 -5% 17%;
+    }
+
+    .divy2 {
+        margin: -14% auto 7% auto;
+    }
+}
+
+@media (max-width: 655px) {
+    h1 {
+        font-size: 3rem;
+    }
     h2 {
         font-size: 1rem;
-        top: 17%;
-        right: 11%;
+        top: 7%;
+    }
+    p {
+        font-size: 1.7rem;
+    }
+
+    .flexy {
+        margin: 0% 0 -5% 13%;
+    }
+    .divy {
+        margin: -5% auto -18% auto;
     }
 }
 
-@media (max-width: 480px) {
-    h2 {
-        font-size: .8rem;
-        top: 15%;
-        right: 11%;
-    }
-
-    .dPhoto {
-        margin-bottom: -10%;
-    }
-}
-
-@media (max-width: 450px) {
-    h2 {
-        top: 15%;
-    }
-} 
-
-@media (max-width: 390px) {
-    h2 {
-        top: 20%;
-    }
+@media (max-width: 575px) {
     .bPhoto {
-       margin-bottom: -5%;
+        margin-top: 15%;
     }
+
+    .flexy {
+        margin: 0% 0 -5% 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .flexy {
+        margin: -30% 0 -5% 0%;
+        transform: scale(.8);
+    }
+    .rsvp {
+        font-size: 2rem;
+        margin: -30% 0% 80% 0%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        top: 6%;
+    }
+}
+
+@media (max-width: 430px) {
+    h2 {
+        top: 5.5%;
+    }
+    .flexy {
+        margin: -30% 0 -5% -5%;
+    }
+
+    .rsvp {
+        margin: -30% 0% 90% 0%;
+    }
+}
+
+@media (max-width: 400px) {
+   .divy {
+      margin: 0% auto -18% auto;
+   }
+
+   .flexy {
+    margin: -30% 0 -5% -9%;
+    transform: scale(.7);
+   }
+
+   h2 {
+    font-size: .8rem;
+   }
 }
