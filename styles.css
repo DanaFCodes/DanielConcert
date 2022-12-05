@@ -76,7 +76,8 @@ h2 {
     margin-top: 0%;
     font-size: 3rem;
     position: absolute;
-    top: 18%;
+    /* top: 18%; */
+    top: 45%;
     right: 19%;
     color: rgb(94, 94, 94);
     opacity: 0;
@@ -235,11 +236,13 @@ p {
     }
 }
 
+
 /* media queries */
 @media (max-width: 1500px) {
     h2 {
         font-size: 2rem;
         top: 16%;
+        /* top: 40%; */
         right: 11%;
     }
 
@@ -377,7 +380,7 @@ p {
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     h2 {
         top: 5.5%;
     }
