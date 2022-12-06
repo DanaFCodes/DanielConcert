@@ -65,14 +65,14 @@ h1 {
 }
 
 h2 {
-    margin-top: 0%;
+    margin-top: 4%;
     font-size: 3rem;
     text-align: right;
     color: rgb(94, 94, 94);
     opacity: 0;
     animation: h1Load var(--h1LoadTime) ease-out var(--h1LoadTime);
     animation-fill-mode: forwards;
-    margin-left: 40%;
+    margin-left: 15%;
 }
 
 .divy {
@@ -350,7 +350,7 @@ p {
         margin-top: -25%;
     }
     .rsvp {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     h1 {
         font-size: 1.7rem;
@@ -396,11 +396,12 @@ p {
 
 @media (max-width: 300px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     h2 {
         margin: 8% -3% -7% 10%;
+        font-size: .5rem
     }
 
     p {
@@ -409,10 +410,11 @@ p {
 
     .dontation p {
         font-size: .5rem;
+        margin-bottom: 5%;
     }
 
     .flexy {
         transform: scale(.5);
-        margin-top: -120%;
+        margin-top: -135%;
     }
 }
